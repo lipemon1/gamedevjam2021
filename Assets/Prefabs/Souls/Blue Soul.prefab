@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 3232663754418581278}
   - component: {fileID: 3232663754418581273}
   - component: {fileID: 4330709173147964330}
+  - component: {fileID: 5673644711627382479}
   m_Layer: 0
-  m_Name: Collectable Soul
+  m_Name: Blue Soul
   m_TagString: CollectableSoul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,6 +107,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 3232663754418581272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d91d8a290835a6f4f8195cd3daa4597a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ad9cd83eacf262468544d16f6d562f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5673644711627382479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232663754418581272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9783d3b4b89986640bbab0231b8ea182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoulType: 1
