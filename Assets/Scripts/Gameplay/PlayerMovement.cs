@@ -12,8 +12,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 1.0f;
     [SerializeField] private float gravityValue = -9.81f;
 
+    Camera _camera;
+
     private void Awake()
     {
+        _camera = Camera.main;
         controller = gameObject.GetComponent<CharacterController>();
     }
 
@@ -32,14 +35,14 @@ public class PlayerMovement : MonoBehaviour
         
         //Start
         
-        var foward = Camera.main.transform.forward;
+        Vector3 foward = _camera.transform.forward;
         foward.y = 0f;
 
-        var right = Camera.main.transform.right;
+        Vector3 right = _camera.transform.right;
         right.y = 0f;
 
-        var fowardMovement = Input.GetAxis("Vertical") * foward.normalized;
-        var rightMovement = Input.GetAxis("Horizontal") * right.normalized;
+        Vector3 fowardMovement = Input.GetAxis("Vertical") * foward.normalized;
+        Vector3 rightMovement = Input.GetAxis("Horizontal") * right.normalized;
         
         //End
 
