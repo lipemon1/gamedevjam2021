@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public void Play()
     {
-
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void Options()
