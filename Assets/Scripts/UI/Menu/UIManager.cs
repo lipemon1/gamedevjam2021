@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
 
     public void Options()
     {
-
+        SceneManager.LoadScene("Options");
     }
 
     public void Credits()
