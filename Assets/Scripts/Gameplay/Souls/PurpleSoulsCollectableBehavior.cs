@@ -27,7 +27,7 @@ namespace SoulSystem
 
         protected override void OnSoulCollected(Collider other)
         {
-            if (!CollidedWithPlayer(other)) return;
+            if (!CollidedWithPlayerAndDisable(other)) return;
 
             OnPurpleSoulCollected();
         }

@@ -7,21 +7,15 @@ public class UIToCameraBehavior : MonoBehaviour
 {
     Camera _camera;
     [SerializeField] float _YOffset;
+
+    [SerializeField] Canvas _cameraCanvas;
     void Awake()
     {
+        if (_cameraCanvas == null)
+            _cameraCanvas = GetComponent<Canvas>();
+
         _camera = Camera.main;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _cameraCanvas.worldCamera = _camera;
     }
 
     void LateUpdate()

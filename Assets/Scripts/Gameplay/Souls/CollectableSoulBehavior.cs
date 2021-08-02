@@ -19,15 +19,20 @@ namespace SoulSystem
             _trigger.enabled = true;
         }
 
-        protected bool CollidedWithPlayer(Collider other)
+        protected bool CollidedWithPlayerAndDisable(Collider other)
         {
-            if (other.CompareTag("Player"))
+            if (CollidedWithPlayer(other))
             {
                 _trigger.enabled = false;
                 return true;
             }
             else
                 return false;
+        }
+
+        protected bool CollidedWithPlayer(Collider other)
+        {
+            return other.CompareTag("Player");
         }
 
         protected abstract void OnSoulCollected(Collider other);
