@@ -26,12 +26,14 @@ namespace SoulSystem
         public void StartAttack()
         {
             _attacking = true;
+            PlayerDeath.PlayerDeathManager.Instance.NewSoulKillingPlayer(this);
             ToggleUI(_attacking);
         }
 
         public void StopAttack()
         {
             _attacking = false;
+            PlayerDeath.PlayerDeathManager.Instance.StopSoulKillingPlayer(this);
             ToggleUI(_attacking);
         }
 
