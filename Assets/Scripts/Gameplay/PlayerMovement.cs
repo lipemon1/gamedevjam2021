@@ -12,16 +12,29 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 1.0f;
     [SerializeField] private float gravityValue = -9.81f;
 
+    bool _canMove;
+
     Camera _camera;
 
     private void Awake()
     {
+        _canMove = true;
         _camera = Camera.main;
         controller = gameObject.GetComponent<CharacterController>();
     }
 
+    private void Start()
+    {
+        PlayerDeath.PlayerDeathManager.Instance.OnPlayerDeath += () =>
+        {
+            _canMove = false;
+        };
+    }
+
     void Update()
     {
+        if (!_canMove) return;
+
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
