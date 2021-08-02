@@ -26,6 +26,9 @@ namespace PlayerDeath
 
         public void NewSoulKillingPlayer(RedSoulAttackBehavior redSoulAttackBehavior)
         {
+            foreach (RedSoulAttackBehavior redSoulAttack in _soulsKillingPlayer)
+                redSoulAttack.StartRaid();
+
             _soulsKillingPlayer.Add(redSoulAttackBehavior);
 
             VerifyDeathCondition();
@@ -33,6 +36,8 @@ namespace PlayerDeath
 
         public void StopSoulKillingPlayer(RedSoulAttackBehavior redSoulAttackBehavior)
         {
+            redSoulAttackBehavior.StopRaid();
+
             _soulsKillingPlayer.Remove(redSoulAttackBehavior);
 
             VerifyDeathCondition();

@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 1354619672648061672}
   - component: {fileID: 5278754227487317440}
   - component: {fileID: 5240785450095399283}
+  - component: {fileID: 1663167586}
   m_Layer: 0
   m_Name: Red Soul
   m_TagString: CollectableSoul
@@ -411,6 +412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   _uiFeedback: {fileID: 179487004}
+  _normalSpeed: 3.5
+  _raidSpeed: 7
 --- !u!114 &5240785450095399283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,3 +426,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53943d514e9af24487679f28399226b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &1663167586
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353863614723990347}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

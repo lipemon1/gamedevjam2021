@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace SoulSystem
 {
@@ -9,12 +10,22 @@ namespace SoulSystem
         [SerializeField] Transform _player;
         [SerializeField] GameObject _uiFeedback;
 
+        [Space(20)]
+        NavMeshAgent _agent;
+        [SerializeField] float _normalSpeed;
+        [SerializeField] float _raidSpeed;
+
         bool _attacking;
 
         private void Awake()
         {
             if (_player == null)
                 _player = GameObject.FindGameObjectWithTag("Player").transform;
+
+            if (_agent == null)
+                _agent = GetComponent<NavMeshAgent>();
+
+            _agent.speed = _normalSpeed;
         }
 
         private void LateUpdate()
@@ -40,6 +51,16 @@ namespace SoulSystem
         void ToggleUI(bool value)
         {
             _uiFeedback.SetActive(value);
+        }
+
+        public void StartRaid()
+        {
+            _agent.speed = _raidSpeed;
+        }
+
+        public void StopRaid()
+        {
+            _agent.speed = _normalSpeed;
         }
     }
 }
