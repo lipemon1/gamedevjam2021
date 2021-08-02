@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 5147403532589326568}
   - component: {fileID: 1354619672648061672}
   - component: {fileID: 5278754227487317440}
+  - component: {fileID: 5240785450095399283}
   m_Layer: 0
   m_Name: Red Soul
   m_TagString: CollectableSoul
@@ -410,3 +411,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   _uiFeedback: {fileID: 179487004}
+--- !u!114 &5240785450095399283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353863614723990347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53943d514e9af24487679f28399226b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

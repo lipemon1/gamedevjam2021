@@ -22,6 +22,8 @@ namespace SoulSystem
         void OnBlueSoulCollected()
         {
             SoulsCollectorManager.Instance.CollectSouls(1);
+
+            FollowPlayer.FollowPlayerManager.Instance.StartFollowPlayer();
         }
     }
 }
