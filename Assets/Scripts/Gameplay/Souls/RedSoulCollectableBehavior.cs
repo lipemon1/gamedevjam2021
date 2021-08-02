@@ -6,9 +6,18 @@ namespace SoulSystem
 {
     public class RedSoulCollectableBehavior : CollectableSoulBehavior
     {
+        [SerializeField] RedSoulAttackBehavior _redSoulAttackBehavior;
+
         void OnTriggerEnter(Collider other)
         {
             OnSoulCollected(other);
+        }
+
+        void OnTriggerExit(Collider other)
+        {
+            if (!CollidedWithPlayer(other)) return;
+
+            _redSoulAttackBehavior.StopAttack();
         }
 
         protected override void OnSoulCollected(Collider other)
@@ -16,13 +25,11 @@ namespace SoulSystem
             if (!CollidedWithPlayer(other)) return;
             
             OnRedSoulCollected();
-            
-            base.OnSoulCollectedEnd();
         }
 
         void OnRedSoulCollected()
         {
-            Debug.Log("RED SOUL COLLECTED");
+            _redSoulAttackBehavior.StartAttack();
         }
     }   
 }
