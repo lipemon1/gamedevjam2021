@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using WorldChange;
 
 public class SoulsCollectorManager : MonoBehaviour
 {
@@ -17,9 +19,21 @@ public class SoulsCollectorManager : MonoBehaviour
             Destroy(this.gameObject);
     }
 
+    void Start()
+    {
+        WorldChangeManager.Instance.OnSoulsSpent += OnSoulSpent;
+    }
+
     public void CollectSouls(int soulAmount)
     {
         _soulsAmount += soulAmount;
+        
+        OnSoulCollected?.Invoke(_soulsAmount);
+    }
+
+    public void OnSoulSpent(int soulSpent)
+    {
+        _soulsAmount -= soulSpent;
         
         OnSoulCollected?.Invoke(_soulsAmount);
     }
