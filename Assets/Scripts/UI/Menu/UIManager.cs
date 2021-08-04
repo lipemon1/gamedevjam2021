@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Level_1");
     }
 
     public void Options()
@@ -32,19 +32,24 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.D))
+        {
+            SceneManager.LoadScene("Dev");
+        }
+
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene("Tutorial_1");
+            SceneManager.LoadScene("Level_1");
         }
 
         if (Input.GetKey(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene("Tutorial_2");
+            SceneManager.LoadScene("Level_2");
         }
 
         if (Input.GetKey(KeyCode.Alpha3))
         {
-            SceneManager.LoadScene("Level_1");
+            SceneManager.LoadScene("Level_3");
         }
     }
 }
