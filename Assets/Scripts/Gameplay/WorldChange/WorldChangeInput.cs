@@ -8,9 +8,11 @@ namespace WorldChange
     public class WorldChangeInput : MonoBehaviour
     {
         [SerializeField] KeyCode _changeWorldInput;
+        [SerializeField] GameObject _soulWorld;
+        [SerializeField] GameObject _humanWorld;
         bool canChangeWorld = false;
         int curSouls;
-        
+
         // Start is called before the first frame update
         void Start()
         {
@@ -24,8 +26,12 @@ namespace WorldChange
             switch (newWorld)
             {
                 case World.HumanWorld:
+                    _soulWorld.SetActive(false);
+                    _humanWorld.SetActive(true);
                     break;
                 case World.SoulWorld:
+                    _humanWorld.SetActive(false);
+                    _soulWorld.SetActive(true);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(newWorld), newWorld, null);
@@ -40,7 +46,7 @@ namespace WorldChange
             if (Input.GetKeyUp(_changeWorldInput))
             {
                 canChangeWorld = false;
-                WorldChangeManager.Instance.ChangeToSoulWorld(curSouls);
+                WorldChangeManager.Instance.ChangeToHumanWorld(curSouls);
             }
         }
 

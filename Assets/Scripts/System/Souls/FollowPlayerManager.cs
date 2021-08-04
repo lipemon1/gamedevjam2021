@@ -17,6 +17,10 @@ namespace SoulSystem.FollowPlayer
 
         private void Awake()
         {
+            if (_player == null)
+                _player = GameObject.FindGameObjectWithTag("Player").transform;
+
+
             if (Instance == null)
                 Instance = this;
             else
@@ -25,7 +29,7 @@ namespace SoulSystem.FollowPlayer
 
         public void StartFollowPlayer()
         {
-            if(!_followingPlayer)
+            if (!_followingPlayer)
                 OnFollowPlayer?.Invoke(_player);
 
             _followingPlayer = true;
