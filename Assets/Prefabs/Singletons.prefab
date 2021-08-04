@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3484714883531582105}
   - component: {fileID: 3484714883531582104}
   - component: {fileID: 938856390}
+  - component: {fileID: 938856385}
   m_Layer: 0
   m_Name: Singletons
   m_TagString: Untagged
@@ -102,3 +103,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _curLevelEditor: 
+--- !u!114 &938856385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3484714883531582109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99484233c85f6804a80db2b3a788a20d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bluePrefab: {fileID: 3232663754418581272, guid: cc98171a70ca88b42a65df032cfa3894, type: 3}

@@ -60,7 +60,7 @@ namespace SoulSystem
             base.OnSoulCollectedEnd();
         }
 
-        protected override void ResetState()
+        public override void ResetState()
         {
             base.ResetState();
 

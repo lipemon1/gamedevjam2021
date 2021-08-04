@@ -366,6 +366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelName: Level_1
+  _timeToLoad: 3
+  _loadNextLevel: 1
 --- !u!65 &6155040467353640014
 BoxCollider:
   m_ObjectHideFlags: 0

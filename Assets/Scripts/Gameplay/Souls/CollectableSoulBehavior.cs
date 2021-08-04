@@ -32,6 +32,7 @@ namespace SoulSystem
 
         protected virtual void Start()
         {
+            PurifySoulsManager.Instance.RegisterSouls(this);
             LevelManager.Instance.OnLevelReseted += (curLevel) => ResetState();
             WorldChangeManager.Instance.OnNewWorld += OnNewWorld;
         }
@@ -48,7 +49,7 @@ namespace SoulSystem
             _initialRot = transform.rotation;
         }
 
-        protected virtual void ResetState()
+        public virtual void ResetState()
         {
             transform.position = _initialPos;
             transform.rotation = _initialRot;
@@ -58,7 +59,7 @@ namespace SoulSystem
                 transform.gameObject.SetActive(true);
         }
 
-        protected virtual void KillSoul()
+        public virtual void KillSoul()
         {
             transform.gameObject.SetActive(false);
             transform.position = new Vector3(-5000f, -5000, -5000);
@@ -93,5 +94,7 @@ namespace SoulSystem
         {
             isOwnedByPurple = true;
         }
+
+        public SoulType SoulType => _soulType;
     }
 }
