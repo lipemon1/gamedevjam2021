@@ -33,6 +33,7 @@ public class SoulsCollectorManager : MonoBehaviour
 
     public void OnSoulSpent(int soulSpent)
     {
+        Debug.Log($"Spending {soulSpent} souls");
         _soulsAmount -= soulSpent;
         
         OnSoulCollected?.Invoke(_soulsAmount);

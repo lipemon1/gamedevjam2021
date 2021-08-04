@@ -26,12 +26,12 @@ namespace WorldChange
             switch (newWorld)
             {
                 case World.HumanWorld:
-                    _soulWorld.SetActive(false);
-                    _humanWorld.SetActive(true);
+                    _soulWorld?.SetActive(false);
+                    _humanWorld?.SetActive(true);
                     break;
                 case World.SoulWorld:
-                    _humanWorld.SetActive(false);
-                    _soulWorld.SetActive(true);
+                    _humanWorld?.SetActive(false);
+                    _soulWorld?.SetActive(true);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(newWorld), newWorld, null);

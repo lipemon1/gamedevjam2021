@@ -734,6 +734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _changeWorldInput: 32
+  _soulWorld: {fileID: 0}
+  _humanWorld: {fileID: 0}
 --- !u!1 &8112081723467923731
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ namespace WorldChange
         public static WorldChangeManager Instance { get; set; }
 
         [SerializeField] int _soulNeededToWorldChange;
-        [SerializeField] int _secondsInHumanWorld;
+        [SerializeField] int _secondsMultiplier;
         [SerializeField] World _curWorld;
 
         public delegate void WorldChangeDelegate();
@@ -50,14 +50,14 @@ namespace WorldChange
         {
             if (_curWorld == World.HumanWorld) return;
 
-            int seconds = soulsAmount / _soulNeededToWorldChange;
-            int soulsSpent = seconds * _soulNeededToWorldChange;
-            OnSoulsSpent?.Invoke(soulsSpent);
+            int smallsBalls = soulsAmount / _soulNeededToWorldChange;
+            OnSoulsSpent?.Invoke(smallsBalls * _soulNeededToWorldChange);
 
+            int seconds = smallsBalls * _secondsMultiplier;
             _curWorld = World.HumanWorld;
-            Debug.Log($"ChangeWorld for {_secondsInHumanWorld} seconds");
+            Debug.Log($"ChangeWorld for {seconds} seconds");
             OnNewWorld?.Invoke(_curWorld);
-            StartCoroutine(ReturnToSoulWorldCo(_secondsInHumanWorld));
+            StartCoroutine(ReturnToSoulWorldCo(seconds));
         }
 
         public void ChangeToSoulWorld()

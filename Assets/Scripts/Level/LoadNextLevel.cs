@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Level;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,7 @@ public class LoadNextLevel : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            LevelManager.Instance.ChangeLevel(_levelName);
             Load();
         }
     }

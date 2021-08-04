@@ -15,8 +15,10 @@ namespace SoulSystem
         [Space] [SerializeField] float _delayToTransform;
         WaitForSeconds _transformWait;
 
-        void Start()
+        protected override void Start()
         {
+            base.Start();
+            
             _transformWait = new WaitForSeconds(_delayToTransform);
         }
 
