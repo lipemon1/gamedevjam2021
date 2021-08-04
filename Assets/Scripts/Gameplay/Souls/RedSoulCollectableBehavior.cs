@@ -31,5 +31,13 @@ namespace SoulSystem
         {
             _redSoulAttackBehavior.StartAttack();
         }
+
+        protected override void KillSoul()
+        {
+            _redSoulAttackBehavior.StopAttack();
+            _redSoulAttackBehavior.StopRaid();
+
+            base.KillSoul();
+        }
     }   
 }

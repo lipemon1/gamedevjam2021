@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using SoulSystem;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,6 +18,9 @@ namespace SoulSystem
             base.Start();
             
             _transformWait = new WaitForSeconds(_delayToTransform);
+            
+            _blueSoul.SetPurpleAsOwner();
+            _redSoul.SetPurpleAsOwner();
         }
 
         void OnTriggerEnter(Collider other)
@@ -58,7 +59,15 @@ namespace SoulSystem
             soulToActive.gameObject.SetActive(true);
             base.OnSoulCollectedEnd();
         }
-    
+
+        protected override void ResetState()
+        {
+            base.ResetState();
+
+            _blueSoul.gameObject.SetActive(false);
+            _redSoul.gameObject.SetActive(false);
+        }
+
         SoulType GetRandomType()
         {
             return Random.Range(0f, 1f) > 0.5f ? SoulType.RED : SoulType.BLUE;

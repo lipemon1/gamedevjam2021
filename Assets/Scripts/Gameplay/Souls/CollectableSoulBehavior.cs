@@ -15,6 +15,8 @@ namespace SoulSystem
         Vector3 _initialPos;
         Quaternion _initialRot;
 
+        bool isOwnedByPurple = false;
+
         void Awake()
         {
             SaveInitialState();
@@ -46,14 +48,17 @@ namespace SoulSystem
             _initialRot = transform.rotation;
         }
 
-        public void ResetState()
+        protected virtual void ResetState()
         {
             transform.position = _initialPos;
             transform.rotation = _initialRot;
-            transform.gameObject.SetActive(true);
+            _trigger.enabled = true;
+            
+            if(!isOwnedByPurple)
+                transform.gameObject.SetActive(true);
         }
 
-        public void KillSoul()
+        protected virtual void KillSoul()
         {
             transform.gameObject.SetActive(false);
             transform.position = new Vector3(-5000f, -5000, -5000);
@@ -79,9 +84,14 @@ namespace SoulSystem
 
         protected abstract void OnSoulCollected(Collider other);
 
-        protected virtual void OnSoulCollectedEnd()
+        protected void OnSoulCollectedEnd()
         {
             KillSoul();
+        }
+
+        public void SetPurpleAsOwner()
+        {
+            isOwnedByPurple = true;
         }
     }
 }

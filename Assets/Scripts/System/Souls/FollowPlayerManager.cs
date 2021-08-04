@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Level;
 using UnityEngine;
 
 namespace SoulSystem.FollowPlayer
@@ -12,6 +14,7 @@ namespace SoulSystem.FollowPlayer
 
         public delegate void OnFollowPlayerDelegate(Transform player);
         public OnFollowPlayerDelegate OnFollowPlayer;
+        public OnFollowPlayerDelegate OnStopFollowPlayer;
 
         bool _followingPlayer = false;
 
@@ -27,12 +30,22 @@ namespace SoulSystem.FollowPlayer
                 Destroy(this.gameObject);
         }
 
+        void Start()
+        {
+            LevelManager.Instance.OnLevelReseted += StopFollowPlayer;
+        }
+
         public void StartFollowPlayer()
         {
             if (!_followingPlayer)
                 OnFollowPlayer?.Invoke(_player);
 
             _followingPlayer = true;
+        }
+
+        void StopFollowPlayer(string curLevel)
+        {
+            OnStopFollowPlayer?.Invoke(_player);
         }
     }
 }

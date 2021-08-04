@@ -22,6 +22,7 @@ namespace SoulSystem.FollowPlayer
         void Start()
         {
             FollowPlayerManager.Instance.OnFollowPlayer += (player) => StartFollowPlayer(player);
+            FollowPlayerManager.Instance.OnStopFollowPlayer += (player) => StopFollowPlayer();
         }
 
         void LateUpdate()
@@ -36,6 +37,13 @@ namespace SoulSystem.FollowPlayer
             _target = playerTransform;
 
             _followTarget = true;
+        }
+
+        void StopFollowPlayer()
+        {
+            _target = null;
+
+            _followTarget = false;
         }
     }
 }
