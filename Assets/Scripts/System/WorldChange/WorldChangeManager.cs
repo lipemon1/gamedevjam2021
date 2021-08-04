@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Level;
 using UnityEngine;
 
 namespace WorldChange
@@ -60,8 +61,9 @@ namespace WorldChange
             StartCoroutine(ReturnToSoulWorldCo(seconds));
         }
 
-        public void ChangeToSoulWorld()
+        void ChangeToSoulWorld()
         {
+            LevelManager.Instance.ResetCurrentLevel();
             Debug.Log("Back to Soul World");
             if (_curWorld == World.SoulWorld) return;
 

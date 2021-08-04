@@ -1,6 +1,7 @@
 using System;
 using Level;
 using UnityEngine;
+using WorldChange;
 
 namespace SoulSystem
 {
@@ -30,6 +31,13 @@ namespace SoulSystem
         protected virtual void Start()
         {
             LevelManager.Instance.OnLevelReseted += (curLevel) => ResetState();
+            WorldChangeManager.Instance.OnNewWorld += OnNewWorld;
+        }
+
+        void OnNewWorld(World newworld)
+        {
+            if(newworld == World.HumanWorld)
+                KillSoul();
         }
 
         void SaveInitialState()
