@@ -79,5 +79,9 @@ namespace WorldChange
         {
             return _soulNeededToWorldChange;
         }
+
+        public World GetCurWorld(){
+            return _curWorld;
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace SoulSystem
     {
         [SerializeField] Transform _player;
         [SerializeField] GameObject _uiFeedback;
+        [SerializeField] bool _enabledAttackBehavior = true;
 
         [Space(20)]
         NavMeshAgent _agent;
@@ -36,6 +37,8 @@ namespace SoulSystem
 
         public void StartAttack()
         {
+            if (!_enabledAttackBehavior) return;
+
             _attacking = true;
             PlayerDeath.PlayerDeathManager.Instance.NewSoulKillingPlayer(this);
             ToggleUI(_attacking);

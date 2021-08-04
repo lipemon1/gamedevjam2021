@@ -7,6 +7,7 @@ namespace SoulSystem
     [RequireComponent(typeof(SoulIdentifierBehavior))]
     public abstract class CollectableSoulBehavior : MonoBehaviour
     {
+        [SerializeField] bool _enableCollectable = true;
         protected SoulType _soulType;
         Collider _trigger;
 
@@ -18,8 +19,8 @@ namespace SoulSystem
             SaveInitialState();
             
             _soulType = this.gameObject.GetComponent<SoulIdentifierBehavior>().SoulType;
-            
-            if(_soulType == SoulType.UNSET)
+
+            if (_soulType == SoulType.UNSET)
                 Debug.LogError("THIS SOULS IS UNSET");
 
             _trigger = GetComponent<Collider>();
@@ -52,6 +53,8 @@ namespace SoulSystem
 
         protected bool CollidedWithPlayerAndDisable(Collider other)
         {
+            if (!_enableCollectable) return false;
+
             if (CollidedWithPlayer(other))
             {
                 _trigger.enabled = false;
@@ -72,5 +75,5 @@ namespace SoulSystem
         {
             KillSoul();
         }
-    }   
+    }
 }
