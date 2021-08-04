@@ -51,5 +51,15 @@ public class UIManager : MonoBehaviour
         {
             SceneManager.LoadScene("Level_3");
         }
+
+        if (Input.GetKey(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("Level_4");
+        }
+
+        if (Input.GetKey(KeyCode.Alpha5))
+        {
+            SceneManager.LoadScene("Level_5");
+        }
     }
 }
