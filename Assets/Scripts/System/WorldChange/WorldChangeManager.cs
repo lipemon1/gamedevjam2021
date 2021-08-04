@@ -46,11 +46,13 @@ namespace WorldChange
                 OnEnableWorldChange?.Invoke();
         }
 
-        public void ChangeToHumanWorld(int HumansAmount)
+        public void ChangeToHumanWorld(int soulsAmount)
         {
             if (_curWorld == World.HumanWorld) return;
 
-            OnSoulsSpent?.Invoke(_soulNeededToWorldChange);
+            int seconds = soulsAmount / _soulNeededToWorldChange;
+            int soulsSpent = seconds * _soulNeededToWorldChange;
+            OnSoulsSpent?.Invoke(soulsSpent);
 
             _curWorld = World.HumanWorld;
             Debug.Log($"ChangeWorld for {_secondsInHumanWorld} seconds");
