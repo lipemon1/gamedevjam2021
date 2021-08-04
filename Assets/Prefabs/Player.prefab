@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 955720099538283611}
   - component: {fileID: 955720099538283600}
   - component: {fileID: 407004887}
+  - component: {fileID: 7589072263577807011}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -720,6 +721,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _deathEffectTime: 2
+--- !u!114 &7589072263577807011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955720099538283610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227e53990670aa44c90ffb2abad830a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _changeWorldInput: 32
 --- !u!1 &8112081723467923731
 GameObject:
   m_ObjectHideFlags: 0
