@@ -29,4 +29,12 @@ public class UIManager : MonoBehaviour
          Application.Quit();
 #endif
     }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene("Level_1");
+        }
+    }
 }
