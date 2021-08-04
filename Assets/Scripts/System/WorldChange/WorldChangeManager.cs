@@ -9,14 +9,15 @@ namespace WorldChange
         HumanWorld,
         SoulWorld
     }
-    
+
     public class WorldChangeManager : MonoBehaviour
     {
         public static WorldChangeManager Instance { get; set; }
 
         [SerializeField] int _soulNeededToWorldChange;
+        [SerializeField] int _secondsInHumanWorld;
         [SerializeField] World _curWorld;
-        
+
         public delegate void WorldChangeDelegate();
         public WorldChangeDelegate OnEnableWorldChange;
 
@@ -33,7 +34,7 @@ namespace WorldChange
             else
                 Destroy(this.gameObject);
         }
-        
+
         void Start()
         {
             SoulsCollectorManager.Instance.OnSoulCollected += (currentSouls) => EnableWorldChange(currentSouls);
@@ -41,42 +42,40 @@ namespace WorldChange
 
         void EnableWorldChange(int currentSouls)
         {
-            if(currentSouls >= _soulNeededToWorldChange)
+            if (currentSouls >= _soulNeededToWorldChange)
                 OnEnableWorldChange?.Invoke();
         }
 
-        public void ChangeToSoulWorld(int soulsAmount)
+        public void ChangeToHumanWorld(int HumansAmount)
         {
+            if (_curWorld == World.HumanWorld) return;
+
+            OnSoulsSpent?.Invoke(_soulNeededToWorldChange);
+
+            _curWorld = World.HumanWorld;
+            Debug.Log($"ChangeWorld for {_secondsInHumanWorld} seconds");
+            OnNewWorld?.Invoke(_curWorld);
+            StartCoroutine(ReturnToSoulWorldCo(_secondsInHumanWorld));
+        }
+
+        public void ChangeToSoulWorld()
+        {
+            Debug.Log("Back to Soul World");
             if (_curWorld == World.SoulWorld) return;
 
-            int seconds = soulsAmount / _soulNeededToWorldChange;
-            int soulsSpent = seconds * _soulNeededToWorldChange;
-            OnSoulsSpent?.Invoke(soulsSpent);
-
             _curWorld = World.SoulWorld;
-            Debug.Log($"ChangeWorld for {seconds} seconds");
-            OnNewWorld?.Invoke(_curWorld);
-            StartCoroutine(ReturnToHumanWorldCo(seconds));
-        }
-
-        void ChangeToHumanWorld()
-        {
-            Debug.Log("Back to Human World");
-            if (_curWorld == World.HumanWorld) return;
-            
-            _curWorld = World.HumanWorld;
             OnNewWorld?.Invoke(_curWorld);
         }
 
-        IEnumerator ReturnToHumanWorldCo(float delay)
+        IEnumerator ReturnToSoulWorldCo(float delay)
         {
             yield return new WaitForSeconds(delay);
-            ChangeToHumanWorld();
+            ChangeToSoulWorld();
         }
 
-        public int GetSoulsToWorldChange()
+        public int GetHumansToWorldChange()
         {
             return _soulNeededToWorldChange;
         }
-    }   
+    }
 }
