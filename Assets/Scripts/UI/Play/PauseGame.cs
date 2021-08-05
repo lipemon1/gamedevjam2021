@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PauseGame : MonoBehaviour
 {
     public GameObject PausePanel;
-    [SerializeField] bool _pause;
+    bool _pause;
 
     void Update()
     {
