@@ -7,18 +7,17 @@ using UnityEngine.SceneManagement;
 public class PauseGame : MonoBehaviour
 {
     public GameObject PausePanel;
-    [SerializeField] KeyCode _pauseKey;
     [SerializeField] bool _pause;
 
     void Update()
     {
-        if (Input.GetKeyDown(_pauseKey))
+        if (Input.GetButtonDown("Pause"))
             _pause = !_pause;
             
-        if(Input.GetKeyDown(_pauseKey) && _pause)
+        if(Input.GetButtonDown("Pause") && _pause)
             Pause();
         
-        if(Input.GetKeyDown(_pauseKey) && !_pause)
+        if(Input.GetButtonDown("Pause") && !_pause)
             Resume();
     }
 

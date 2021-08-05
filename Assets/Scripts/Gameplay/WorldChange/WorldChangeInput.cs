@@ -7,9 +7,9 @@ namespace WorldChange
 {
     public class WorldChangeInput : MonoBehaviour
     {
-        [SerializeField] KeyCode _changeWorldInput;
         [SerializeField] GameObject _soulWorld;
         [SerializeField] GameObject _humanWorld;
+        [SerializeField] float _worldChangeInput;
         bool canChangeWorld = false;
         int curSouls;
 
@@ -43,7 +43,9 @@ namespace WorldChange
         {
             if (!canChangeWorld) return;
 
-            if (Input.GetKeyUp(_changeWorldInput))
+            _worldChangeInput = Input.GetAxis("ChangeWorld");
+
+            if (Input.GetButtonDown("ChangeWorld") || _worldChangeInput > 0.1f || _worldChangeInput < -0.1f)
             {
                 canChangeWorld = false;
                 WorldChangeManager.Instance.ChangeToHumanWorld(curSouls);
