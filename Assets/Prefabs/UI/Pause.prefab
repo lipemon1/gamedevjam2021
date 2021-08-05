@@ -1064,3 +1064,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PausePanel: {fileID: 5912506122416551183}
+  _pauseKey: 27
+  _pause: 0
