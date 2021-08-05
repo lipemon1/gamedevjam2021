@@ -24,6 +24,9 @@ namespace WorldChange
 
         public delegate void NewWorldDelegate(World newWorld);
         public NewWorldDelegate OnNewWorld;
+        
+        public delegate void HumanWorldWithTimeDelegate(World newWorld, float worldTime);
+        public HumanWorldWithTimeDelegate OnHumanWorldWithTime;
 
         public delegate void SoulSpentOnChangeWorldDelegate(int amount);
         public SoulSpentOnChangeWorldDelegate OnSoulsSpent;
@@ -59,6 +62,7 @@ namespace WorldChange
             Debug.Log($"ChangeWorld for {seconds} seconds");
             OnNewWorld?.Invoke(_curWorld);
             StartCoroutine(ReturnToSoulWorldCo(seconds));
+            OnHumanWorldWithTime?.Invoke(_curWorld, seconds);
         }
 
         void ChangeToSoulWorld()
