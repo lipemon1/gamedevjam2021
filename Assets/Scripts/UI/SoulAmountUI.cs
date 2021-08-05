@@ -15,6 +15,7 @@ public class SoulAmountUI : MonoBehaviour
 
     void UpdateSoulsUI(int newAmount)
     {
-        SoulTextAmount.text = SoulPrefix + $"{newAmount}";
+        if(SoulTextAmount != null)
+            SoulTextAmount.text = SoulPrefix + $"{newAmount}";
     }
 }

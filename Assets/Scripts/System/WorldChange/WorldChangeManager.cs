@@ -81,7 +81,7 @@ namespace WorldChange
             ChangeToSoulWorld();
         }
 
-        public int GetHumansToWorldChange()
+        public int GetSoulsNeededToWorldChange()
         {
             return _soulNeededToWorldChange;
         }
