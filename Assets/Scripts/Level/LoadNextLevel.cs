@@ -11,7 +11,7 @@ public class LoadNextLevel : MonoBehaviour
     public float _timeToLoad;
     public bool _loadNextLevel;
 
-    private void Load()
+    public void Load()
     {
         SceneManager.LoadScene(_levelName);
     }
@@ -21,13 +21,13 @@ public class LoadNextLevel : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             LevelManager.Instance.ChangeLevel(_levelName);
-            
-            if(_loadNextLevel)
+
+            if (_loadNextLevel)
                 StartCoroutine(LoadNextLevelCo());
         }
     }
 
-    IEnumerator LoadNextLevelCo()
+    public IEnumerator LoadNextLevelCo()
     {
         yield return new WaitForSeconds(_timeToLoad);
         Load();

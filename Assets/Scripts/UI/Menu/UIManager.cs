@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("Intro");
     }
 
     public void Options()
@@ -43,6 +43,11 @@ public class UIManager : MonoBehaviour
             SceneManager.LoadScene("Dev");
         }
 
+        if (Input.GetKey(KeyCode.I))
+        {
+            SceneManager.LoadScene("Intro");
+        }
+
         if (Input.GetKey(KeyCode.Alpha1))
         {
             SceneManager.LoadScene("Level_1");
@@ -66,6 +71,21 @@ public class UIManager : MonoBehaviour
         if (Input.GetKey(KeyCode.Alpha5))
         {
             SceneManager.LoadScene("Level_5");
+        }
+
+        if (Input.GetKey(KeyCode.Alpha6))
+        {
+            SceneManager.LoadScene("Level_6");
+        }
+
+        if (Input.GetKey(KeyCode.Alpha7))
+        {
+            SceneManager.LoadScene("Level_7");
+        }
+
+        if (Input.GetKey(KeyCode.Alpha8))
+        {
+            SceneManager.LoadScene("Level_8");
         }
     }
 }

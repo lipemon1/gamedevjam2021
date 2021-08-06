@@ -27,7 +27,7 @@ namespace SoulSystem.FollowPlayer
 
         void LateUpdate()
         {
-            if (!_followTarget) return;
+            if (!_followTarget || !_agent.enabled) return;
 
             _agent.SetDestination(_target.position);
         }
