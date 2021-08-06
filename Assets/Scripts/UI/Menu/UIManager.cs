@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("Intro");
     }
 
     public void Options()
