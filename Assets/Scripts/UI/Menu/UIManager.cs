@@ -61,5 +61,10 @@ public class UIManager : MonoBehaviour
         {
             SceneManager.LoadScene("Level_5");
         }
+
+        if (Input.GetKey(KeyCode.Alpha6))
+        {
+            SceneManager.LoadScene("Level_6");
+        }        
     }
 }
