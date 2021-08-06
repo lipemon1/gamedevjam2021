@@ -11,16 +11,21 @@ namespace Movement
         private bool groundedPlayer;
 
         [SerializeField] private float playerSpeed = 2.0f;
+        [SerializeField] [Range(0f, 0.5f)] private float playerReduceSpeedMultiplier = 0.20f;
         [SerializeField] private float jumpHeight = 1.0f;
         [SerializeField] private float gravityValue = -9.81f;
 
         bool _canMove;
+        float _curSpeed;
+        bool _reduceSpeed;
 
         Camera _camera;
 
         private void Awake()
         {
             _canMove = true;
+            _curSpeed = playerSpeed;
+            _reduceSpeed = false;
             _camera = Camera.main;
             controller = gameObject.GetComponent<CharacterController>();
         }
@@ -71,6 +76,20 @@ namespace Movement
 
             playerVelocity.y += gravityValue * Time.deltaTime;
             controller.Move(playerVelocity * Time.deltaTime);
+        }
+
+        public void ApplyReduceSpeed()
+        {
+            if (_reduceSpeed) return;
+
+            _reduceSpeed = true;
+            playerSpeed = _curSpeed * (1 - playerReduceSpeedMultiplier);
+        }
+
+        public void RemoveReduceSpeed()
+        {
+            _reduceSpeed = false;
+            playerSpeed = _curSpeed;
         }
     }
 }

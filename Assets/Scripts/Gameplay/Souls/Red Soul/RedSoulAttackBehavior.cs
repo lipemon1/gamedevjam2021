@@ -16,7 +16,7 @@ namespace SoulSystem
         [SerializeField] float _normalSpeed;
         [SerializeField] float _raidSpeed;
 
-        bool _attacking;
+        public bool _attacking;
 
         private void Awake()
         {
