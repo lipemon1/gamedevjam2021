@@ -12,6 +12,7 @@ namespace PlayerDeath
         List<RedSoulAttackBehavior> _soulsKillingPlayer = new List<RedSoulAttackBehavior>();
 
         [SerializeField] int _soulsToKillPlayer;
+        [SerializeField] bool _stalagmiteKillPlayer;
 
         public delegate void OnPlayerDeathDelegate();
         public OnPlayerDeathDelegate OnPlayerDeath;
@@ -45,8 +46,13 @@ namespace PlayerDeath
 
         void VerifyDeathCondition()
         {
-            if(_soulsKillingPlayer?.Count >= _soulsToKillPlayer)
+            if (_soulsKillingPlayer?.Count >= _soulsToKillPlayer || _stalagmiteKillPlayer)
                 OnPlayerDeath?.Invoke();
+        }
+
+        public void PlayerDeath()
+        {
+            OnPlayerDeath?.Invoke();
         }
     }
 }
