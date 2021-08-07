@@ -15,7 +15,7 @@ public class PlayerFollow : MonoBehaviour
     void Start()
     {
         _playerTrasnform = GameObject.FindGameObjectWithTag("Player").transform;
-        _cameraOffset = transform.position - _playerTrasnform.position;
+        //_cameraOffset = transform.position - _playerTrasnform.position;
     }
 
     void LateUpdate()

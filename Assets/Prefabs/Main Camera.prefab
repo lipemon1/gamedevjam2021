@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerTrasnform: {fileID: 0}
-  _cameraOffset: {x: 0, y: 0, z: 0}
+  _cameraOffset: {x: 30, y: 30, z: -30}
   _smoothFactor: 0.51
 --- !u!114 &4154471831003344240
 MonoBehaviour:
