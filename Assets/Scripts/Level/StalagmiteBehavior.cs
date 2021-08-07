@@ -17,6 +17,7 @@ public class StalagmiteBehavior : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             ActiveStalagmite();
+            Destroy(gameObject);
         }
     }
 

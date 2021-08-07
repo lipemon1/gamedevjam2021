@@ -457,6 +457,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-6371544664840908994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Living
+  m_EditorClassIdentifier: 
+  Name: World of Living
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-5968751708534833993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1095,11 +1115,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1015823153117675499}
-  - {fileID: 6259080181457928275}
-  - {fileID: 6891511466311086356}
-  - {fileID: -4394505984167698078}
-  - {fileID: 1033945254134696592}
+  - {fileID: 8918158052666870175}
+  - {fileID: 8116787490962257491}
+  - {fileID: 5954325769122775280}
+  - {fileID: 75910170970576370}
+  - {fileID: -6371544664840908994}
   MinDistance: 0
   MaxDistance: 0
   Length: 136000
@@ -1118,7 +1138,7 @@ MonoBehaviour:
   Path: FMODBuild/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637638551560000000
+  lastModified: 637638820589600131
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1328,8 +1348,28 @@ MonoBehaviour:
   - {fileID: -1162110085292974531}
   StringsBanks:
   - {fileID: 4684804756976622600}
-  stringsBankWriteTime: 637638551200000000
+  stringsBankWriteTime: 637638820589639674
   cacheVersion: 6
+--- !u!114 &75910170970576370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Normal
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &128867242931104505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,7 +1858,7 @@ MonoBehaviour:
   Path: FMODBuild/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637638551200000000
+  lastModified: 637638820589639674
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -1986,6 +2026,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1618
+--- !u!114 &5954325769122775280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Level 8
+  m_EditorClassIdentifier: 
+  Name: Level 8
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &6019907507278139060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2316,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4644
+--- !u!114 &8116787490962257491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Chase
+  m_EditorClassIdentifier: 
+  Name: Chase
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8175870002803380502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2371,6 +2451,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4318
+--- !u!114 &8918158052666870175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Dead
+  m_EditorClassIdentifier: 
+  Name: World of Dead
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8926864363934424214
 MonoBehaviour:
   m_ObjectHideFlags: 0
