@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{98223485-9334-4b77-990f-82d1f87e3287}">
+		<property name="name">
+			<value>Stop Chasing</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a3fca1be-1380-4d65-921a-f18ec1dafc43}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a3fca1be-1380-4d65-921a-f18ec1dafc43}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

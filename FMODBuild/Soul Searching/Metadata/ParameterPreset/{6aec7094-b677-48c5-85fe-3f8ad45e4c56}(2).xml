@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{6aec7094-b677-48c5-85fe-3f8ad45e4c56}">
+		<property name="name">
+			<value>Parameter 1</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3120b973-0f5b-4555-a1e9-d328c6accedb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3120b973-0f5b-4555-a1e9-d328c6accedb}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Normal</value>
+			<value>World of Dead</value>
+			<value>Chasing</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

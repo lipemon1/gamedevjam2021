@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{6276b437-cdd1-43d8-aaaa-be42d3b7d5f8}">
+		<property name="name">
+			<value>World of Dead</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e4a90ed3-1c1f-4be4-b547-1b032c013dbe}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e4a90ed3-1c1f-4be4-b547-1b032c013dbe}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.61000001430511475</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{b05c4c07-112f-4377-8367-1c53f50ea551}">
+		<property name="name">
+			<value>World of Living</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{87af5c73-02f3-4e20-8ea0-6211293d439a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{87af5c73-02f3-4e20-8ea0-6211293d439a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>25</value>
+		</property>
+	</object>
+</objects>

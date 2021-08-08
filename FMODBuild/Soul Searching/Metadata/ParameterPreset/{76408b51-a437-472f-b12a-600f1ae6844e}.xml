@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{76408b51-a437-472f-b12a-600f1ae6844e}">
+		<property name="name">
+			<value>Chase</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{865319c1-7e4d-477c-85d4-5892a81657fb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{865319c1-7e4d-477c-85d4-5892a81657fb}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.61000001430511475</value>
+		</property>
+	</object>
+</objects>

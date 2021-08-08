@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{398609ad-d781-402d-899b-38c514e957b6}">
+		<property name="assetPath">
+			<value>SFX/sfx_ambience_wrldotdead.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>64.052244897959184</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3d90f75-1531-4369-b696-f03b5bdb950d}</destination>
+		</relationship>
+	</object>
+</objects>

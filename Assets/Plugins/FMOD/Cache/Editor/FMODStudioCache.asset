@@ -107,7 +107,7 @@ MonoBehaviour:
   Path: event:/SFX/Morto/sfx_gameplay_redsoulflwng
   guid: 6f2685fb17d0a0418d3d4e1e7e99b2f7
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level6_frase3
   guid: 2fd43f2562f93e4894d4dbc71aa368c1
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
   Path: event:/Voice/Helen Alma/helen_trying_to_let_go
   guid: decb29882324574dbe5faaf30227b12b
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -245,7 +245,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level2_frase2
   guid: f6ba8b342d75ce429be169964a0e1af3
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -319,6 +319,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
+--- !u!114 &-7029639294868603224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Normal
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-6951121938406257613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +354,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/intro_frase
   guid: 0f88820e2dd4de42843c85a1e48f449a
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -357,7 +377,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level1_frase1
   guid: b77dd3d102dde74e9c3a3b11210619f7
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -380,7 +400,7 @@ MonoBehaviour:
   Path: event:/SFX/Morto/sfx_hud_getsoul
   guid: 22a5e4468cdd034a9dd9ae6375487df6
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -426,7 +446,7 @@ MonoBehaviour:
   Path: event:/MSC/msc_menu
   guid: b2199dd3195ffe45897aede3dd755ec8
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -512,7 +532,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level5_frase2
   guid: 5ae849b464890c40baf9aff886045f1b
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -535,7 +555,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level6_frase2
   guid: a19b1b0995245e44aeb82e56f875e0c6
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -558,7 +578,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level8_frase1
   guid: 6a24d4f1830fe3429167708fd73dfd45
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -647,7 +667,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level2_frase3
   guid: d278206ebcf60245a1e5e7bd8486468b
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -744,6 +764,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 185
+--- !u!114 &-4216882706934145632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Chase
+  m_EditorClassIdentifier: 
+  Name: Chase
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4175633691640727637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,7 +822,7 @@ MonoBehaviour:
   Path: event:/SFX/Outro/sfx_hud_getamuletpart
   guid: a63270a716e41040ae69c0fe36d28c68
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -828,7 +868,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level7_frase3
   guid: 4287dd498d31fc4da1130099bfdf0fb5
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -836,6 +876,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4644
+--- !u!114 &-3674663622998593692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Level 8
+  m_EditorClassIdentifier: 
+  Name: Level 8
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-3663726035591325229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +934,7 @@ MonoBehaviour:
   Path: event:/SFX/Outro/sfx_gameplay_useamulet
   guid: 14d44fc9c7c6c840abc96a40fb51b7d6
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -989,7 +1049,7 @@ MonoBehaviour:
   Path: event:/SFX/Vivo/sfx_ambience_wrldotliv
   guid: ca96feb6a747d44fad40a16222828dee
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -997,6 +1057,46 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 80065
+--- !u!114 &-2757055945644902698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Living
+  m_EditorClassIdentifier: 
+  Name: World of Living
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-2639842363086540628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Level 8
+  m_EditorClassIdentifier: 
+  Name: Level 8
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-2502640420121160816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,7 +1112,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level4_frase3
   guid: 02ec8513ccb002429c31ca6a09e1b7dd
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1020,6 +1120,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4714
+--- !u!114 &-2494068100160986215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Chase
+  m_EditorClassIdentifier: 
+  Name: Chase
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 546829742
+    data2: 2968017260
+  Exists: 0
 --- !u!114 &-2429125536929575714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1035,7 +1155,7 @@ MonoBehaviour:
   Path: event:/SFX/Morto/sfx_gameplay_portalopen
   guid: c5ca6d48e8c88e47b5221f3a25332b64
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1104,7 +1224,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level7_frase2
   guid: c48dd0e70bcfae439e99839cd15e12b3
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1127,7 +1247,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level7_frase1
   guid: cc1415d1d19b2c4594e10f06d3ca63fb
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1150,16 +1270,16 @@ MonoBehaviour:
   Path: event:/MSC/msc_gameplay
   guid: f1bb56d987a1204dbb12db8cf78f5373
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7589800988584507322}
-  - {fileID: 3023644507812525208}
-  - {fileID: -1065049056253514634}
-  - {fileID: 8582352128299343574}
-  - {fileID: -4877716320640721443}
+  - {fileID: 782466346440077630}
+  - {fileID: -4216882706934145632}
+  - {fileID: -2639842363086540628}
+  - {fileID: 4236089357402834049}
+  - {fileID: -532009131664335157}
   MinDistance: 0
   MaxDistance: 0
   Length: 136000
@@ -1240,7 +1360,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level4_frase1
   guid: 3036673601b9694b8f254b36a3287f23
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1248,6 +1368,46 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4410
+--- !u!114 &-689173560249142780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Dead
+  m_EditorClassIdentifier: 
+  Name: World of Dead
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-532009131664335157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Living
+  m_EditorClassIdentifier: 
+  Name: World of Living
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-492560829664948059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,7 +1423,7 @@ MonoBehaviour:
   Path: event:/Voice/Helen Humana/helen_death_scream
   guid: 0fca15cf291f4c468d3d84ea12608c92
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1286,7 +1446,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level6_frase1
   guid: a2f1f462173eff4cb90490f17f8248ab
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1309,7 +1469,7 @@ MonoBehaviour:
   Path: event:/SFX/Outro/sfx_rocks_falling
   guid: 065f3570cdb1db40a189b4ce7d14c377
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1332,7 +1492,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level3_frase2
   guid: a3b0385987b74b4ab4ca426ae71830bb
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1340,6 +1500,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1608
+--- !u!114 &-190829866048240539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Living
+  m_EditorClassIdentifier: 
+  Name: World of Living
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3043727506
+    data2: 4004149424
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,8 +1533,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4684804756976622600}
-  - {fileID: -1162110085292974531}
+  - {fileID: 9135592906436393245}
+  - {fileID: 1269606644593761426}
   EditorEvents:
   - {fileID: -2502640420121160816}
   - {fileID: -446244784666734062}
@@ -1405,10 +1585,10 @@ MonoBehaviour:
   - {fileID: -7616832014171118616}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   StringsBanks:
-  - {fileID: 4684804756976622600}
-  stringsBankWriteTime: 637638820589639674
+  - {fileID: 9135592906436393245}
+  stringsBankWriteTime: 637640210980000000
   cacheVersion: 6
 --- !u!114 &75910170970576370
 MonoBehaviour:
@@ -1445,7 +1625,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level4_frase2
   guid: 0c7f749ed29c0347810d779e95b54eca
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1453,6 +1633,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3026
+--- !u!114 &162121895896408529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Normal
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3149760211
+    data2: 1137942666
+  Exists: 0
 --- !u!114 &256037997893115033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1468,7 +1668,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level5_frase3
   guid: 468b378f479d9a41a22799cfb8872c35
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1476,6 +1676,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3241
+--- !u!114 &782466346440077630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Dead
+  m_EditorClassIdentifier: 
+  Name: World of Dead
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &980268815971764890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,6 +1778,25 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &1269606644593761426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODBuild/Soul Searching/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637640210960000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &1463923131488391348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1573,7 +1812,7 @@ MonoBehaviour:
   Path: event:/SFX/Outro/sfx_gameplay_transition
   guid: 320408febae3054fb5406aee288827f0
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1619,7 +1858,7 @@ MonoBehaviour:
   Path: event:/SFX/Morto/sfx_ambience_wrldotdead
   guid: 4dd257dfbdb3f648b0a0563b389990b0
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1642,7 +1881,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/if_helen_dies_bridge_easteregg
   guid: 1245bc9c497b4946a27eb45d8ca234cb
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1731,7 +1970,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/button_start
   guid: de6d627ba4653e49b8b3b2bd7e36a0ac
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1774,7 +2013,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level1_frase2
   guid: 07ef51fc4de846459f8fa5fb8876f977
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1797,7 +2036,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level3_frase3
   guid: 1d78ca32f757f44a8e93376a80c4dc72
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1828,6 +2067,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5500
+--- !u!114 &3503493665838240775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Dead
+  m_EditorClassIdentifier: 
+  Name: World of Dead
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3288489578
+    data2: 3398978186
+  Exists: 0
 --- !u!114 &4155821038330440903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,6 +2110,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4085
+--- !u!114 &4236089357402834049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Normal
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &4236499012292902047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,7 +2145,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level3_frase1
   guid: 9a5be779567d694b83e28b70251e75be
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1940,6 +2219,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9532
+--- !u!114 &4551490432811832734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Level 8
+  m_EditorClassIdentifier: 
+  Name: Level 8
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 312514197
+    data2: 1961220843
+  Exists: 0
 --- !u!114 &4661757135990319956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1955,7 +2254,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level2_frase4
   guid: b1b03996d380564d83c83aafb6f1c28c
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1978,12 +2277,12 @@ MonoBehaviour:
   Path: FMODBuild/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637638820589639674
+  lastModified: 637640357415370426
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 3334
-  Exists: 1
+  Exists: 0
 --- !u!114 &4920655271543716573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1999,7 +2298,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/if_helen_takes_too_long_statue
   guid: 1d2daa8b24501d4fb3de48b6bc4ef26c
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2042,7 +2341,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level5_frase1
   guid: 5c5a9efc78b2e640b41d598f22240e2f
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2155,7 +2454,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level2_frase1
   guid: 6e5b454c27a63449abf274a100bc6e65
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2244,7 +2543,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level1_frase3
   guid: 7506d0f6372d9748bf630c109772dd43
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2333,7 +2632,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/if_helen_dies
   guid: 753ef4d36a543547b02ae734336a6e01
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2399,7 +2698,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/button_select
   guid: 83e1241e0c68fb4a8a13fe2f71b6e415
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2422,7 +2721,7 @@ MonoBehaviour:
   Path: event:/SFX/Morto/sfx_gameplay_absorbsoul
   guid: 173a91f84d48114cb6576093ef300369
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2465,7 +2764,7 @@ MonoBehaviour:
   Path: event:/SFX/Morto/sfx_gameplay_absorbsoulprpl
   guid: 48020579a4fb004d8134f820607284ab
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2473,6 +2772,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
+--- !u!114 &8021839475480276052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Chase
+  m_EditorClassIdentifier: 
+  Name: Chase
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &8026773546217425153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2531,7 +2850,7 @@ MonoBehaviour:
   Path: event:/SFX/Vivo/sfx_gameplay_footsteps
   guid: 08c31ea8fb96bd49a7e1d1857b6353be
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2554,7 +2873,7 @@ MonoBehaviour:
   Path: event:/Voice/Pais/level2_frase5
   guid: 2a75d9ab6070874e88cac1e2aa0c96ea
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2730,7 +3049,7 @@ MonoBehaviour:
   Path: event:/Voice/Helen Alma/helen_turning_to_red_soul
   guid: 0b7fe3912aa98b40ba0eaf68ab60eb07
   Banks:
-  - {fileID: -1162110085292974531}
+  - {fileID: 1269606644593761426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2738,3 +3057,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8254
+--- !u!114 &9135592906436393245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMODBuild/Soul Searching/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637640210980000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3334
+  Exists: 1

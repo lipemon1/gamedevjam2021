@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{a6d6eda3-9d2e-480a-bdc5-323c4c388269}">
+		<property name="assetPath">
+			<value>SFX/sfx_gameplay_transition.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3d90f75-1531-4369-b696-f03b5bdb950d}</destination>
+		</relationship>
+	</object>
+</objects>
