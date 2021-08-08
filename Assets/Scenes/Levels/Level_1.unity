@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2887,7 +2887,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1568
+  m_Name: pb_Mesh-19066
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3882,7 +3882,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24720
+  m_Name: pb_Mesh58852
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4532,34 +4532,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1085833486, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1085833489, guid: 5d8c4d338f039674494231983203125f, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
-    - target: {fileID: 472316787042684939, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 472316787042684939, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 837532253530509956, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 955720097773804115, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 955720099538283600, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: playerSpeed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 955720099538283610, guid: 5d8c4d338f039674494231983203125f, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4607,14 +4583,6 @@ PrefabInstance:
     - target: {fileID: 955720099538283615, guid: 5d8c4d338f039674494231983203125f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1321077448194635824, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7596027903672491604, guid: 5d8c4d338f039674494231983203125f, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8c4d338f039674494231983203125f, type: 3}
@@ -4854,3 +4822,120 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92a9f8385f1cdad4bb32fa43702d7436, type: 3}
+--- !u!1001 &8550627139740168641
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 42909554508089771, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_Name
+      value: Parents Voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 326677162037081433, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Event
+      value: event:/Voice/Pais/level1_frase2
+      objectReference: {fileID: 0}
+    - target: {fileID: 326677162037081433, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Preload
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 326677162037081433, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: TriggerOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 326677162037081433, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 326677162037081433, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Event
+      value: event:/Voice/Helen Alma/helen_trying_to_let_go
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Preload
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: TriggerOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056566516127334198, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Event
+      value: event:/Voice/Pais/level1_frase3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056566516127334198, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Preload
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056566516127334198, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: TriggerOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056566516127334198, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056566516127334198, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bbdc4428f451543478558b3396de36bf, type: 3}
