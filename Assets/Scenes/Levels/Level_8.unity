@@ -6493,6 +6493,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 955720099538283600, guid: 5d8c4d338f039674494231983203125f, type: 3}
+      propertyPath: playerSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 955720099538283600, guid: 5d8c4d338f039674494231983203125f, type: 3}
       propertyPath: playerReduceSpeedMultiplier
       value: 0.3
       objectReference: {fileID: 0}
