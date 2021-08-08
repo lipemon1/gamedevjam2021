@@ -818,7 +818,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38518
+  m_Name: pb_Mesh-66212
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10854,7 +10854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155040467353640015, guid: 47d46c61a0e2ec54a92dc9cfa3f47445, type: 3}
       propertyPath: _levelName
-      value: Menu
+      value: Credits
       objectReference: {fileID: 0}
     - target: {fileID: 6155040467353640053, guid: 47d46c61a0e2ec54a92dc9cfa3f47445, type: 3}
       propertyPath: m_RootOrder
