@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1605,11 +1605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 36202579929694624, guid: eef3f1e2c99ae3148a2d0d8a127bf16f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -977
-      objectReference: {fileID: 0}
-    - target: {fileID: 36202579929694624, guid: eef3f1e2c99ae3148a2d0d8a127bf16f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -404
+      value: -954.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eef3f1e2c99ae3148a2d0d8a127bf16f, type: 3}
@@ -2887,7 +2883,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-19066
+  m_Name: pb_Mesh-11242
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3882,7 +3878,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh58852
+  m_Name: pb_Mesh31344
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

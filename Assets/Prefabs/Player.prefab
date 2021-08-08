@@ -838,7 +838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857939a104bb99d47a7a3a5926486d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 3
+  playerSpeed: 7
   playerReduceSpeedMultiplier: 0.2
   jumpHeight: 1
   gravityValue: -9.81
@@ -869,6 +869,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soulWorld: {fileID: 0}
   _humanWorld: {fileID: 0}
+  _onSoulWorld:
+    m_PersistentCalls:
+      m_Calls: []
+  _onHumanWorld:
+    m_PersistentCalls:
+      m_Calls: []
   _worldChangeInput: 0
 --- !u!114 &5542418266707444173
 MonoBehaviour:
