@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace WorldChange
 {
@@ -9,6 +10,12 @@ namespace WorldChange
     {
         [SerializeField] GameObject _soulWorld;
         [SerializeField] GameObject _humanWorld;
+        public UnityEvent _onSoulWorld;
+        public UnityEvent _onHumanWorld;
+        
+        
+        [Space(20)]
+        
         [SerializeField] float _worldChangeInput;
         bool canChangeWorld = false;
         int curSouls;
@@ -28,10 +35,12 @@ namespace WorldChange
                 case World.HumanWorld:
                     _soulWorld?.SetActive(false);
                     _humanWorld?.SetActive(true);
+                    _onHumanWorld?.Invoke();
                     break;
                 case World.SoulWorld:
                     _humanWorld?.SetActive(false);
                     _soulWorld?.SetActive(true);
+                    _onSoulWorld?.Invoke();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(newWorld), newWorld, null);
