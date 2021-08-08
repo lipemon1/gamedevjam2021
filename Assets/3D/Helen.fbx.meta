@@ -3,7 +3,12 @@ guid: 1378e05ebdc176b49a402e28127e05d7
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brilho
+    second: {fileID: 2100000, guid: 4f6e7dc7a47e6ca468a2fecc654325c6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -72,7 +77,8 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - d11c998f2d3206740a3b1a5f17dc1f84
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
