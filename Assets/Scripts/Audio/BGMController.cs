@@ -1,10 +1,13 @@
 using FMODUnity;
+using Level;
 using UnityEngine;
+using WorldChange;
 
 namespace Audio
 {
     public class BGMController : MonoBehaviour
     {
+        [SerializeField] StudioEventEmitter _emitter;
         void Awake()
         {
             DontDestroyOnLoad(this.gameObject);
@@ -13,13 +16,18 @@ namespace Audio
         // Start is called before the first frame update
         void Start()
         {
-            
+            WorldChangeManager.Instance.OnNewWorld += OnNewWorld;
+            LevelManager.Instance.OnLevelChange += OnLevelChange;
         }
-    
-        // Update is called once per frame
-        void Update()
+
+        void OnLevelChange(string curlevel)
         {
-            
+            // throw new System.NotImplementedException();
+        }
+
+        void OnNewWorld(World newworld)
+        {
+            // throw new System.NotImplementedException();
         }
     }
 }
