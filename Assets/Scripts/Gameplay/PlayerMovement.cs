@@ -20,6 +20,7 @@ namespace Movement
         bool _reduceSpeed;
 
         Camera _camera;
+        float _playerSpeed;
 
         private void Awake()
         {
@@ -67,6 +68,7 @@ namespace Movement
             //End
 
             Vector3 move = fowardMovement + rightMovement;
+            _playerSpeed = move.normalized.magnitude;
             controller.Move(move * Time.deltaTime * playerSpeed);
 
             if (move != Vector3.zero)
@@ -90,6 +92,11 @@ namespace Movement
         {
             _reduceSpeed = false;
             playerSpeed = _curSpeed;
+        }
+
+        public float GetPlayerSpeed()
+        {
+            return _playerSpeed;
         }
     }
 }
