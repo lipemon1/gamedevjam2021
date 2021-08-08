@@ -59,6 +59,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4616883322943917277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586792594807116391}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025358984, y: 0.031484105, z: 0.03533775}
+  m_Center: {x: 0.002679493, y: -0.00029859965, z: 0.00222542}
 --- !u!1001 &487227937648865729
 PrefabInstance:
   m_ObjectHideFlags: 0
