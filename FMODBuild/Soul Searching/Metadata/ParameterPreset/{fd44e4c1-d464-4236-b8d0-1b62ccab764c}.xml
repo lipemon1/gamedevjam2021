@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{fd44e4c1-d464-4236-b8d0-1b62ccab764c}">
+		<property name="name">
+			<value>Number of Red Souls</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{7955ecc5-f8d3-41e6-90ed-d1d397b5edd0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{7955ecc5-f8d3-41e6-90ed-d1d397b5edd0}">
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

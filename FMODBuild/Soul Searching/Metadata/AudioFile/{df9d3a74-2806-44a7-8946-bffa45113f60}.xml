@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{df9d3a74-2806-44a7-8946-bffa45113f60}">
+		<property name="assetPath">
+			<value>grito de morte 1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.8546938775510204</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3d90f75-1531-4369-b696-f03b5bdb950d}</destination>
+		</relationship>
+	</object>
+</objects>
