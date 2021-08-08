@@ -24798,7 +24798,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-32270
+  m_Name: pb_Mesh-24668
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26881,6 +26881,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 862671543}
+    - target: {fileID: 3484714883531582106, guid: 6c423d07b49eafb46aa06583f57b19e8, type: 3}
+      propertyPath: _soulsToKillPlayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3484714883531582107, guid: 6c423d07b49eafb46aa06583f57b19e8, type: 3}
       propertyPath: m_RootOrder
       value: 6
