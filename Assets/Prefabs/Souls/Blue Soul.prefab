@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: event:/SFX/Morto/sfx_gameplay_absorbsoul
+  Event: event:/SFX/sfx_gameplay_absorbsoul
   PlayEvent: 3
   StopEvent: 0
   AllowFadeout: 1

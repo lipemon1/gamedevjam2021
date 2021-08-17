@@ -9886,9 +9886,93 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1617530949, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530949, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530950, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Event
+      value: event:/Voice/Pais/level4_frase1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530950, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Preload
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530950, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: PlayEvent
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530950, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: TriggerOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530950, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: CollisionTag
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530950, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617530950, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 42909554508089771, guid: bbdc4428f451543478558b3396de36bf, type: 3}
       propertyPath: m_Name
       value: Parents Voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Event
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: PlayEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 848455786538378266, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489156, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489159, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Event
+      value: event:/Voice/Pais/level4_frase3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489159, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: Preload
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489159, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: PlayEvent
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489159, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: TriggerOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489159, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: CollisionTag
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489159, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329467653026489159, guid: bbdc4428f451543478558b3396de36bf, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6779008858140109346, guid: bbdc4428f451543478558b3396de36bf, type: 3}
       propertyPath: m_RootOrder
