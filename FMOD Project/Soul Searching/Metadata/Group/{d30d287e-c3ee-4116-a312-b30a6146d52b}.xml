@@ -5,7 +5,7 @@
 			<value>Voice</value>
 		</property>
 		<relationship name="masters">
-			<destination>{ac5bb282-e629-496c-b074-44296def9d9f}</destination>
+			<destination>{ba9b9e39-2d6d-4b24-a2af-18d3aa2b0e60}</destination>
 		</relationship>
 		<relationship name="effectChain">
 			<destination>{f90c8a36-e1ca-4ca8-9106-a1cab7fc6fd2}</destination>

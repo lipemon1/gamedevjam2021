@@ -5,7 +5,7 @@
 			<value>Music</value>
 		</property>
 		<relationship name="masters">
-			<destination>{ac5bb282-e629-496c-b074-44296def9d9f}</destination>
+			<destination>{3f652356-ddcd-4750-9cbb-f58faccf2cce}</destination>
 		</relationship>
 		<relationship name="effectChain">
 			<destination>{f807cc7e-ce66-4d6c-ba06-b3d0f3054dda}</destination>

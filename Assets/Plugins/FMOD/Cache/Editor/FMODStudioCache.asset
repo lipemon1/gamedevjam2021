@@ -45,7 +45,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3500
+  Length: 2450
 --- !u!114 &-8510251006060996943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,10 +149,33 @@ MonoBehaviour:
   Path: FMOD Project/Soul Searching/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637647332560000000
+  lastModified: 637650364815230655
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-5920494210713741084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Morto/sfx_gameplay_absorbsoulprpl
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Morto/sfx_gameplay_absorbsoulprpl
+  guid: 48020579a4fb004d8134f820607284ab
+  Banks:
+  - {fileID: -6451110100547450021}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
 --- !u!114 &-5731898143313369238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +245,69 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 460
+--- !u!114 &-5266181387385828605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Chase
+  m_EditorClassIdentifier: 
+  Name: Chase
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-5255505018461673238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Morto/sfx_ambience_wrldotdead
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Morto/sfx_ambience_wrldotdead
+  guid: 4dd257dfbdb3f648b0a0563b389990b0
+  Banks:
+  - {fileID: -6451110100547450021}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 64052
+--- !u!114 &-5002697611326347322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Normal
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4785447407815432488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +488,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &-3527700006410623908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Living
+  m_EditorClassIdentifier: 
+  Name: World of Living
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3419129335018495997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,11 +523,11 @@ MonoBehaviour:
   Path: FMOD Project/Soul Searching/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637647332560000000
+  lastModified: 637650364815970168
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 3288
+    Value: 3558
   Exists: 1
 --- !u!114 &-2686104973521459762
 MonoBehaviour:
@@ -469,6 +575,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3000
+--- !u!114 &-2287010962728887995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gameplay_redsoulflwng/Stop Chasing
+  m_EditorClassIdentifier: 
+  Name: Stop Chasing
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-1996370571393532423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,12 +840,10 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -5731898143313369238}
   - {fileID: -6668881122807545370}
-  - {fileID: -5370733687865221182}
   - {fileID: -1248005636109338311}
   - {fileID: -4366018007152295507}
   - {fileID: 1578956732639183033}
   - {fileID: -735446677687297910}
-  - {fileID: 2913232432360309968}
   - {fileID: -762141225925232461}
   - {fileID: 6362979018285892771}
   - {fileID: -8510251006060996943}
@@ -731,10 +855,8 @@ MonoBehaviour:
   - {fileID: -1996370571393532423}
   - {fileID: 6797343784977264632}
   - {fileID: 8168513074565208198}
-  - {fileID: -2370829384084899557}
   - {fileID: -4214650553837797808}
   - {fileID: -2686104973521459762}
-  - {fileID: 8483577711687827089}
   - {fileID: -8938613068396636913}
   - {fileID: -4028154558566631112}
   - {fileID: 7515240127962237235}
@@ -742,7 +864,6 @@ MonoBehaviour:
   - {fileID: 7187383560433887889}
   - {fileID: -3552425702323196186}
   - {fileID: 2701474998614250546}
-  - {fileID: 806178634264918914}
   - {fileID: 2976616972942312306}
   - {fileID: 1505459953717101223}
   - {fileID: 3220483969143268832}
@@ -751,20 +872,46 @@ MonoBehaviour:
   - {fileID: 2307109558544724459}
   - {fileID: 1313322191508961773}
   - {fileID: -4613007898248273666}
-  - {fileID: -3953048748451987996}
   - {fileID: 6281148747664985281}
   - {fileID: -8536882983141249853}
   - {fileID: -1841014368566061024}
   - {fileID: 1462064297137253448}
   - {fileID: -1543866920561795542}
   - {fileID: -3681452711088137833}
+  - {fileID: 809445878447475644}
+  - {fileID: 6124033900369658691}
+  - {fileID: -5920494210713741084}
+  - {fileID: -5255505018461673238}
+  - {fileID: 2630225874858919258}
+  - {fileID: 4081353986663849540}
+  - {fileID: 1896661226987618903}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6451110100547450021}
   StringsBanks:
   - {fileID: -3419129335018495997}
-  stringsBankWriteTime: 637647332560000000
+  stringsBankWriteTime: 637650364815970168
   cacheVersion: 6
+--- !u!114 &189087755189369717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Dead
+  m_EditorClassIdentifier: 
+  Name: World of Dead
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &806178634264918914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,6 +936,49 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &809445878447475644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Vivo/sfx_gameplay_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Vivo/sfx_gameplay_footsteps
+  guid: 08c31ea8fb96bd49a7e1d1857b6353be
+  Banks:
+  - {fileID: -6451110100547450021}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 460
+--- !u!114 &972269984366367610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gameplay_redsoulflwng/Stop Chasing
+  m_EditorClassIdentifier: 
+  Name: Stop Chasing
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1313322191508961773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +1092,34 @@ MonoBehaviour:
   - Name: 
     Value: 3288
   Exists: 0
+--- !u!114 &1896661226987618903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MSC/msc_gameplay
+  m_EditorClassIdentifier: 
+  Path: event:/MSC/msc_gameplay
+  guid: f1bb56d987a1204dbb12db8cf78f5373
+  Banks:
+  - {fileID: -6451110100547450021}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 189087755189369717}
+  - {fileID: 8738321227858327286}
+  - {fileID: 7161279850743667447}
+  - {fileID: 5352829289073060013}
+  - {fileID: -5002697611326347322}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 136000
 --- !u!114 &1941632475709502865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,6 +1163,50 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
+--- !u!114 &2630225874858919258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Morto/sfx_gameplay_redsoulflwng
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Morto/sfx_gameplay_redsoulflwng
+  guid: 6f2685fb17d0a0418d3d4e1e7e99b2f7
+  Banks:
+  - {fileID: -6451110100547450021}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 972269984366367610}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
+--- !u!114 &2664271295717772335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Normal
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &2701474998614250546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,6 +1345,72 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4000
+--- !u!114 &4081353986663849540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Vivo/sfx_ambience_wrldotliv
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Vivo/sfx_ambience_wrldotliv
+  guid: ca96feb6a747d44fad40a16222828dee
+  Banks:
+  - {fileID: -6451110100547450021}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 80065
+--- !u!114 &5352829289073060013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Living
+  m_EditorClassIdentifier: 
+  Name: World of Living
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &6124033900369658691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Morto/sfx_gameplay_absorbsoul
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Morto/sfx_gameplay_absorbsoul
+  guid: 173a91f84d48114cb6576093ef300369
+  Banks:
+  - {fileID: -6451110100547450021}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3500
 --- !u!114 &6281148747664985281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1173,6 +1501,26 @@ MonoBehaviour:
   - Name: 
     Value: 3372
   Exists: 0
+--- !u!114 &7161279850743667447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Level 8
+  m_EditorClassIdentifier: 
+  Name: Level 8
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &7187383560433887889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,3 +1636,63 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 64052
+--- !u!114 &8507557673103065505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/World of Dead
+  m_EditorClassIdentifier: 
+  Name: World of Dead
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &8588086666686112419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Level 8
+  m_EditorClassIdentifier: 
+  Name: Level 8
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &8738321227858327286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/msc_gameplay/Chasing
+  m_EditorClassIdentifier: 
+  Name: Chasing
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
