@@ -7,8 +7,20 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance { get; set; }
+    
     [SerializeField] StudioEventEmitter _play;
     [SerializeField] StudioEventEmitter _confirm;
+    [SerializeField] StudioEventEmitter _selected;
+
+    void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this.gameObject);
+    }
+
     void Start()
     {
         PlayerPrefs.SetInt("LevelDone", 0);
@@ -47,6 +59,11 @@ public class UIManager : MonoBehaviour
     void PlayConfirmSfx()
     {
         _confirm.Play();
+    }
+
+    public void PlaySelected()
+    {
+        _selected.Play();
     }
 
     private void Update()
