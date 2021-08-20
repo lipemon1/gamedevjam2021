@@ -1,11 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] StudioEventEmitter _play;
+    [SerializeField] StudioEventEmitter _confirm;
     void Start()
     {
         PlayerPrefs.SetInt("LevelDone", 0);
@@ -13,27 +16,37 @@ public class UIManager : MonoBehaviour
 
     public void Play()
     {
+        _play.Play();
+        MenuBGM.Instance.StopMenuBGM();
         SceneManager.LoadScene("Intro");
     }
 
     public void Options()
     {
+        PlayConfirmSfx();
         SceneManager.LoadScene("Options");
     }
 
     public void Credits()
     {
+        PlayConfirmSfx();
         SceneManager.LoadScene("Credits");
     }
 
     public void Quit()
     {
+        PlayConfirmSfx();
         Application.Quit();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
          Application.Quit();
 #endif
+    }
+
+    void PlayConfirmSfx()
+    {
+        _confirm.Play();
     }
 
     private void Update()

@@ -600,6 +600,8 @@ GameObject:
   m_Component:
   - component: {fileID: 457438327}
   - component: {fileID: 457438326}
+  - component: {fileID: 457438329}
+  - component: {fileID: 457438328}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -619,6 +621,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed75fbe9fcb6ba4ab55ede67b0805b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _play: {fileID: 457438329}
+  _confirm: {fileID: 457438328}
 --- !u!4 &457438327
 Transform:
   m_ObjectHideFlags: 0
@@ -633,6 +637,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457438328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457438325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/UI/menu_confirm
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &457438329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457438325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/UI/button_start
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &526094569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,6 +1456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1091420464}
   - component: {fileID: 1091420463}
+  - component: {fileID: 1091420465}
   m_Layer: 0
   m_Name: Menu BGM
   m_TagString: Untagged
@@ -1427,8 +1478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/MSC/msc_menu
-  PlayEvent: 1
-  StopEvent: 2
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1450,6 +1501,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091420465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091420462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e375657c7f16f94a95b99819a3f1384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _menuEmitter: {fileID: 1091420463}
 --- !u!1 &1597143720
 GameObject:
   m_ObjectHideFlags: 0
